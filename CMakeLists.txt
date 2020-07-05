@@ -7,16 +7,7 @@ if(${VCPKG_TOOLCHAIN})
     set(VCPKG_LIBRARY_LINKAGE dynamic)
 endif()
 
-if(${VCPKG_TOOLCHAIN})
-    # Some features supported by GCC for C++17 aren't supported by MSVC
-    # C++17. This makes MSVC use the "latest" standard, which has the
-    # features we need.
-    set(CMAKE_CXX_STANDARD 20)
-else()
-    # For now, only C++17 features will be used, despite needing to use
-    # C++20 for MSVC.
-    set(CMAKE_CXX_STANDARD 17)
-endif()
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 if(${OPENGL_INTERPOLATION})
