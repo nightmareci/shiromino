@@ -20,6 +20,11 @@ $ cmake -B build -S . && cmake --build build -j$(nproc)
 $ sudo apt install build-essential cmake libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libvorbis-dev libsqlite3-dev
 $ cmake -B build -S . && cmake --build build -j$(nproc)
 ```
+#### Linux (rpm-based, tested on Fedora 33)
+```shell
+$ sudo yum install cmake gcc-c++ SDL2-devel SDL2_image-devel SDL2_mixer-devel libvorbis-devel libsq3-devel 
+$ cmake -B build -S . && cmake --build build -j$(nproc)
+```
 #### macOS
 Before running these instructions, make sure to install [Homebrew](https://brew.sh/).
 ```shell
