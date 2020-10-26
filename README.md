@@ -22,7 +22,7 @@ $ cmake -B build -S . && cmake --build build -j$(nproc)
 ```
 #### Linux (rpm-based, tested on Fedora 33)
 ```shell
-$ sudo yum install cmake SDL2-devel SDL2_image-devel SDL2_mixer-devel libvorbis-devel libsq3-devel gcc-c++
+$ sudo yum install cmake gcc-c++ SDL2-devel SDL2_image-devel SDL2_mixer-devel libvorbis-devel libsq3-devel 
 $ cmake -B build -S . && cmake --build build -j$(nproc)
 ```
 #### macOS
